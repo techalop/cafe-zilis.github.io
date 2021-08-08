@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cafe Zilis</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='css/bootstrap.css'>
+    <link rel='stylesheet' href='css/all.min.css'>
+    <link rel='stylesheet' href='css/fontawesome.min.css'>
+
+    <style>
+       
+        .card{
+           margin: 1rem;
+           height: 420px;
+        }
+        .noDes{
+            height: 350px;
+        }
+        .brd-cafe{
+            border-color: #662200;
+        }
+        .btn-cafe{
+            background-color: #662200;
+            color: #fff;
+        }
+        #map{
+            border-radius: 0.5rem;
+            height: 280px;
+            width: 550px;
+        }
+        #btns{
+            margin-top: 6rem;
+        }
+        .title{
+            background-color: #804000;
+        }
+        .logo{
+            height: 4rem;
+            width: 4rem;
+            
+        }
+        @media screen and (max-width: 600px) {
+            #map{
+                height: 300px;
+                width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    
+    <div  class="sticky-top h1 pb-5 text-white title" style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;">
+        <h1>Café <img class="logo rounded-circle" src="logo.jpg" alt="logo zilis" /> Zilis</h1>
+        <h6 class="" style="color: lightgray;">Un gout de luxe</h6>
+    </div>
+    
+    <div class="btn-group fixed-top" id="btns" role="group" aria-label="Basic mixed styles example">
+        <a class="btn btn-warning shadow-none p-2 pb-3" href="#dejs">Petit Déjs</a>
+        <a class="btn btn-success shadow-none" href="#froide">Froides</a>
+        <a class="btn btn-cafe shadow-none" href="#chaude">Chaudes</a>
+      </div>
+          <!-- modal -->
+    
+    <!-- modal -->
+    <!-- Cards -->
+    <!-- Petit déj -->
+    <div id="dejs" class="row container-fluid" style="margin-left: 0px;">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 ">
+            <div class="card shadow border-warning">
+                <img src="dej.jpg"  class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Petit déj Soussi</h5>
+                    <p class="card-text">Pain Complet-Miel-Beurre traditionnel-Amlou-Huile d'argan-Thé vert-Jus d'orange</p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-warning shadow-none">28.00 dh</button></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-warning">
+                <img src="dej.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Petit déj Spécial</h5>
+                    <p class="card-text">Tranche de pain enduit par jben et zaater-Olives noires-Boisson chaude au choix-Jus d'orange</p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-warning shadow-none">23.00 dh</button></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-warning">
+                <img src="omelett.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Petit déj Omlette espagnole</h5>
+                    <p class="card-text">Pain complet-Fromage rouge-Sauce tomate spéciale + Huile d'olive-Olives noires-Boissons chaude au choix-Jus d'Orange</p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-warning shadow-none" >28.00 dh</button></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-warning">
+                <img src="fassi.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Petit déj Fassi</h5>
+                    <p class="card-text">Pain complet-Omelette Khlii-Olives noires-Huile d'olives-Boisson chaude au choix-Jus d'Orange</p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-warning shadow-none">28.00 dh</button></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-warning">
+                <img src="dej.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Petit déj Jabli</h5>
+                    <p class="card-text">Pain complet-Oeuf au plat-Cacher-Jben-Fromage-Olives-Huile d'olives-Boisson chaude au choix-Jus d'Orange</p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-warning shadow-none">26.00 dh</button></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-warning">
+                <img src="omlet.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Petit déj Omelette Fromage</h5>
+                    <p class="card-text">Pain complet-Omelette fromage-Huile d'olive-Olives noires-Boissons chaude au choix-Jus d'Orange</p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-warning shadow-none">25.00 dh</button></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-warning">
+                <img src="parisi.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Petit déj Parisien</h5>
+                    <p class="card-text">Vien,oiserie-Boisson chaude au choix-Jus d'Orange</p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-warning shadow-none">18.00 dh</button></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-warning">
+                <img src="dej.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Petit déj Zilis</h5>
+                    <p class="card-text">Pain grillé-Fromage-Confiture-Olives noires-Thé vert-Jus d'Orange</p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-warning shadow-none">22.00 dh</button></div>
+            </div>
+        </div>  
+        <!-- Tagine -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 ">
+            <div class="card shadow border-danger">
+                <img src="tagine-g.jpg"  class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Tagine Gourmond</h5>
+                    <p class="card-text">Pain complet-CEUfs à la tomate-Olives</p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-danger shadow-none">17.00 dh</button></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-danger">
+                <img src="tagine-v.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Tagine Viande hachée</h5>
+                    <p class="card-text">Pain complet-Viande hachée-olives</p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-danger shadow-none">23.00 dh</button></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-danger">
+                <img src="bissara.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Bissara</h5>
+                    <p class="card-text">Pain complet-Bissara-Olives</p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-danger shadow-none">12.00 dh</button></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-danger">
+                <img src="Harira.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Menu Harira</h5>
+                    <p class="card-text">Harira-Pain grillé-Oeuf-Chabakiaet Dattes</p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-danger shadow-none">13.00 dh</button></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-danger noDes">
+                <img src="Harira.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Harira simple</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-danger shadow-none">7.00 dh</button></div>
+            </div>
+        </div>
+        <!-- Gouters -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-primary noDes">
+                <img src="pain.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Pain au chocolat</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-primary shadow-none">6.00 dh</button></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-primary noDes">
+                <img src="croissant1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Pain au raisin</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-primary shadow-none">7.00 dh</button></div>
+            </div>
+        </div> 
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-primary noDes">
+                <img src="croissant.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Fourée</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-primary shadow-none">7.00 dh</button></div>
+            </div>
+        </div> 
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-primary noDes">
+                <img src="msemn1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">M'semen</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-primary shadow-none">4.00 dh</button></div>
+            </div>
+        </div>
+        <!-- Crépes -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-primary noDes">
+                <img src="crepe.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Crépe au Miel</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-primary shadow-none">16.00 dh</button></div>
+            </div>
+        </div> 
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-primary noDes">
+                <img src="crepe.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Crépe au Nutella</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-primary shadow-none">18.00 dh</button></div>
+            </div>
+        </div> 
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-primary noDes">
+                <img src="crepe1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Crépe Nutalla Banane</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-primary shadow-none">20.00 dh</button></div>
+            </div>
+        </div> 
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-primary noDes">
+                <img src="crepe1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Crépe Fromage</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-primary shadow-none">20.00 dh</button></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-primary noDes">
+                <img src="crepe1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Crépe Fromage ...</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div id="froide" class="card-footer bg-white border-white"><button class="btn btn-primary shadow-none">23.00 dh</button></div>
+            </div>
+        </div>
+        <!-- Jus  -->
+        <div  class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-success noDes">
+                <img src="orange.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Jus d'orange</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-success shadow-none">14.00 dh</button></div>
+            </div>
+        </div> 
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-success noDes">
+                <img src="banan.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Jus de Banane</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-success shadow-none">15.00 dh</button></div>
+            </div>
+        </div> 
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-success noDes">
+                <img src="pomme.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Jus de Pomme</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-success shadow-none">15.00 dh</button></div>
+            </div>
+        </div> 
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-success noDes">
+                <img src="Avocat.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Jus d'Avocat</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-success shadow-none">16.00 dh</button></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-success noDes">
+                <img src="citron.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Jus de Citron</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-success shadow-none">16.00 dh</button></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-success noDes">
+                <img src="gingembre.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Jus de Gingembre</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-success shadow-none">17.00 dh</button></div>
+            </div>
+        </div> 
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-success noDes">
+                <img src="mangue1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Jus de Mangue</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-success shadow-none">20.00 dh</button></div>
+            </div>
+        </div> 
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-success noDes">
+                <img src="frais.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Jus d Fraise</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-success shadow-none">17.00 dh</button></div>
+            </div>
+        </div> 
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-success noDes">
+                <img src="or-av.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Jus d'Avocat Orange</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-success shadow-none">18.00 dh</button></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-success noDes">
+                <img src="panache.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Panaché au lait</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-success shadow-none">20.00 dh</button></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-success noDes">
+                <img src="panache1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Panaché au jus d'orange</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-success shadow-none">20.00 dh</button></div>
+            </div>
+        </div>
+        <!-- Soda -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-success noDes">
+                <img src="canet.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Cannet Soda</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-success shadow-none">12.00 dh</button></div>
+            </div>
+        </div> 
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-success noDes">
+                <img src="orangina1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Orangina</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-success shadow-none">12.00 dh</button></div>
+            </div>
+        </div> 
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-success noDes">
+                <img src="oulmes1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Oulmess</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-success shadow-none">12.00 dh</button></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-success noDes">
+                <img src="eau-minérale.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Eau Minérale</h5>
+                    <p class="card-text">(50 cl)</p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-success shadow-none">8.00 dh</button></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-success noDes">
+                <img src="eau-minérale.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Eau Minérale</h5>
+                    <p class="card-text">(33 cl)</p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-success shadow-none">3.00 dh</button></div>
+            </div>
+        </div>
+        <!-- Cocktail -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-success noDes">
+                <img src="mojito.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Virgin Mojito</h5>
+                    <p class="card-text">Menthe-Citron ou Fraise</p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-success shadow-none">18.00 dh</button></div>
+            </div>
+        </div> 
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-success noDes">
+                <img src="Pina.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Pina Coloda</h5>
+                    <p class="card-text">Ananas-Cocoa</p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-success shadow-none">20.00 dh</button></div>
+            </div>
+        </div> 
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-success noDes">
+                <img src="mango1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Mango Julius</h5>
+                    <p class="card-text">Mango-Orange</p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-success shadow-none">20.00 dh</button></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-success noDes">
+                <img src="rose.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Rose Passion</h5>
+                    <p class="card-text">Fraise-Péche-Banane</p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-success shadow-none">20.00 dh</button></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow border-success noDes">
+                <img src="vitamine.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Vitaminé</h5>
+                    <p class="card-text">Kiwi-Banane-Orange</p>
+                </div>
+                <div id="chaude" class="card-footer bg-white border-white"><button class="btn btn-success shadow-none">20.00 dh</button></div>
+            </div>
+        </div>
+        <!-- Thé -->
+        <div  class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow brd-cafe noDes">
+                <img src="thé.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Thé vert</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-cafe shadow-none">11.00 dh</button></div>
+            </div>
+        </div> 
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow brd-cafe noDes">
+                <img src="thé.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Thé tkhlita</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-cafe shadow-none">12.00 dh</button></div>
+            </div>
+        </div> 
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow brd-cafe noDes">
+                <img src="thé.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Thé noir</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-cafe shadow-none">12.00 dh</button></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow brd-cafe noDes">
+                <img src="the-vert.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Verveine</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-cafe shadow-none">12.00 dh</button></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow brd-cafe noDes">
+                <img src="the-vert.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Verveine-Thyme</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-cafe shadow-none">12.00 dh</button></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow brd-cafe">
+                <img src="rooibos.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Thé Rooibos(svenska bar)</h5>
+                    <p class="card-text">Rooibos(Thé rouge)-Fraise-Framboises</p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-cafe shadow-none">20.00 dh</button></div>
+            </div>
+        </div> 
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow brd-cafe">
+                <img src="the-noir.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Thé noir(masala chai)</h5>
+                    <p class="card-text">Thé noir-gingembre-cardamome-cannella-clous de girofle</p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-cafe shadow-none">20.00 dh</button></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow brd-cafe">
+                <img src="the-noir.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Thé noir(pasific sun)</h5>
+                    <p class="card-text">Thé noir-petale de rose-zeste d'orange-carthame fleurs de tourmesul</p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-cafe shadow-none">20.00 dh</button></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow brd-cafe">
+                <img src="the-zilis.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Thé Zilis</h5>
+                    <p class="card-text">Menthe-feulles de frantuise-feulles de mertiles-fleurs d'orange-pétales de rose</p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-cafe shadow-none">20.00 dh</button></div>
+            </div>
+        </div>
+        <!-- cafe -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow  noDes brd-cafe">
+                <img src="cafe-n.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Nespresso</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-cafe shadow-none">15.00 dh</button></div>
+            </div>
+        </div> 
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow brd-cafe noDes">
+                <img src="cafe-n.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Café noir</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-cafe shadow-none">11.00 dh</button></div>
+            </div>
+        </div> 
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow brd-cafe noDes">
+                <img src="cafe-n.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Café séparé</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-cafe shadow-none">13.00 dh</button></div>
+            </div>
+        </div> 
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow brd-cafe noDes">
+                <img src="cafe-n.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Double espresso</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-cafe shadow-none">16.00 dh</button></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow brd-cafe noDes">
+                <img src="coffee.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Café créme</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-cafe shadow-none">12.00 dh</button></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow brd-cafe noDes">
+                <img src="milk.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Lait</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-cafe shadow-none">10.00 dh</button></div>
+            </div>
+        </div> 
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow brd-cafe noDes">
+                <img src="milk.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Lait lipton</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-cafe shadow-none">12.00 dh</button></div>
+            </div>
+        </div> 
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow brd-cafe noDes">
+                <img src="milk.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Lait Verveine</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-cafe shadow-none">12.00 dh</button></div>
+            </div>
+        </div> 
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow brd-cafe noDes">
+                <img src="chocolat-chaud.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Chocolat chaude</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-cafe shadow-none">12.00 dh</button></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow brd-cafe noDes">
+                <img src="morocchino.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Café Marocchino</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-cafe shadow-none">15.00 dh</button></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="card shadow brd-cafe noDes">
+                <img src="Cappuccino.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Cappucino</h5>
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer bg-white border-white"><button class="btn btn-cafe shadow-none">18.00 dh</button></div>
+            </div>
+        </div>
+        
+</div>
+    <!-- Cards -->
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row bg-dark">
+                <div class="col text-center">
+                    <h1 class="text-white" style="font-family: Georgia, 'Times New Roman', Times, serif;">Café Zilis</h1>
+                    <h6 class=" font-weight-light mb1 text-capitalize text-secondary">Le meilleur que nous avons pour le plus cher que vous avez</h6>
+                    <div class="py-1">
+                        <button type="button" class="btn shadow-none  border-0 py-0 px-0"><a href="https://www.facebook.com/CafeZilis/" target="_blank"><i class="fab fa-facebook mx-3 text-primary h3"></i></a></button>
+                        <button type="button" class="btn shadow-none  border-0 py-0 px-0"><a href="https://instagram.com/cafezilis?utm_medium=copy_link" target="_blank"><i class="fab fa-instagram mx-3 text-danger h3"></i></a></button>
+                        <button type="button" class="btn shadow-none  border-0 py-0 px-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop"  ><i class="fab fa-whatsapp-square mx-3 text-success h3" ></i></button>
+                    </div>
+                    <div id="map" class="container my-2"></div>
+                    <div class="text-white py-1" style="text-align: center;">&copy; All rights reserved, created by Tarik BenLahbib&hearts;</div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+
+    <!-- Alert -->
+      <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">    
+            <div class="modal-content border-success" id="modal-bg">
+                <div class="modal-header ">
+                    <h5 class="modal-title text-success"  id="staticBackdropLabel">Phone Numbers</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    05372-80053 / 0600-000000
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                </div>
+        </div>
+        </div>
+    </div>
+            
+    <!-- Alert -->
+
+    <script src='js/bootstrap.min.js'></script>
+    <!-- Animation -->    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/animate-scrolling.js"></script>
+    <!-- Map -->
+    <script src="js/location.js"></script>
+    <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCT-jOo33Qe9j6iH14ky0g86or9Coqr-8&callback=initMap&libraries=&v=weekly" async>
+    </script>
+
+</body>
+</html>
